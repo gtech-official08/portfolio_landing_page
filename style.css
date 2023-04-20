@@ -1,0 +1,440 @@
+/*  */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* Main Section Styling */
+.main_section{
+    width: 100%;
+    height: 100vh;
+    background: #011117;
+    position: relative;
+}
+
+/* Navbar Section Styling */
+.nav_section{
+    width: 100%;
+    height: 75px;
+    background: #011117;
+    border-bottom: 2px solid #02141b;
+    box-shadow: 0 0.5px 20px #01141b;
+}
+.navbar_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo Section Styling */
+.logo_section{
+    display: flex;
+    align-items: center;
+}
+.logo_link{
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #fc00ff;
+    opacity: 0.9;
+}
+.logo_link:hover{
+    color: #fc00ff;
+}
+.logo_link span{
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #999999;
+}
+
+/* Nav Items Section Styling */
+.nav_items_icon{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.nav_items_section{
+    width: 100%;
+    height: auto;
+}
+.nav_items{
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+.nav_items .link{
+    font-size: 1.29rem;
+    letter-spacing: 0.09rem;
+    color: #bcbcbc;
+}
+.nav_items .link:hover,
+.nav_items .active{
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-image: linear-gradient(0.25turn rgba(255, 0, 128), #00dbde);
+    border-image-slice: 1;
+    width: 100%;
+}
+
+/* Toggle Icon Button */
+.toggleIcon{
+    font-size: 1.3rem;
+    color: #bcbcbc;
+    display: none;
+}
+
+/* Hero Section Styling */
+.hero_section{
+    width: 100%;
+    height: calc(85vh - 75px);
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    padding-top: 5.0rem !important;
+}
+
+/* Personal Data Section Styling */
+.personal_data_section{
+    width: 57%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 2.1rem;
+}
+.other_info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.intro_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.intro{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #999999;
+}
+.wave{
+    display: inline-block !important;
+    font-size: 1.5rem;
+    transform-origin: bottom center !important;
+    animation: wave 4s ease-out infinite !important;
+}
+
+/* WAving hand animation section */
+@keyframes wave {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.fullname{
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: #bcbcbc;
+    text-align: start;
+}
+.position{
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.14rem;
+    background: linear-gradient(180deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-image: linear-gradient(0.25turn rgba(255, 0, 128), #00dbde);
+    border-image-slice: 1;
+    width: 100%;
+}
+.about_me{
+    font-size: 1.1rem;
+    color: #999999;
+    margin-bottom: 2.2rem;
+}
+
+/* Animation on personal data section */
+.slideToUp1{
+    animation: slideToUp 1s ease-in;
+}
+.slideToUp2{
+    animation: slideToUp 1.5s ease-in;
+}
+.slideToUp3{
+    animation: slideToUp 2s ease-in;
+}
+.slideToUp4{
+    animation: slideToUp 2.5s ease-in;
+}
+
+@keyframes slideToUp {
+    from{
+        transform: translateY(30px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+/* Social Links Section Styling */
+.social_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.99rem;
+    margin-bottom: 2.1rem;
+}
+.social_icon{
+    width: 33px;
+    height: 33px;
+    border-radius: 40px 35px 20px 15px/15px 20px 35px 40px;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.social_icon:hover{
+    background: linear-gradient(-45deg, #00dbde, #fc00ff);
+}
+.social_link{
+    width: 28px;
+    height: 28px;
+    border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+    background: #012434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bcbcbc;
+}
+.social_link:hover{
+    color: #bcbcbc;
+}
+
+/* Social Link Animation */
+.slideToLeftFacebook{
+    animation: slideToLeft 1.5s ease-out;
+}
+.slideToLeftYoutube{
+    animation: slideToLeft 1.8s ease-out;
+}
+.slideToLeftLinkedin{
+    animation: slideToLeft 2.1s ease-out;
+}
+.slideToLeftInstagram{
+    animation: slideToLeft 2.4s ease-out;
+}
+.slideToLeftGithub{
+    animation: slideToLeft 2.7s ease-out;
+}
+@keyframes slideToLeft {
+    from{
+        transform: translateX(-400px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+/* Download button Styling */
+.download_btn{
+    width: 160px;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #012434;
+}
+
+
+/* Image Section Styling */
+.img_section{
+    width: 40%;
+    height: auto;
+    background: linear-gradient(45deg, #fc00ff, #00dbde);
+    border-radius: 70px 45px 40px 15px/20px 20px 35px 80px;
+    box-shadow: -3px -3px 150px #024f50;
+}
+.my_img{
+    width: 100%;
+    height: 68vh;
+    object-fit: cover;
+    object-position: center;
+    padding: 0.7rem;
+    border-radius: 70px 45px 40px 15px/20px 20px 35px 80px;
+}
+
+/* Red Dim Background color section styling */
+.red_circle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 40px 45px 400px 140px rgba(118, 33, 120, 0.78);
+    -webkit-box-shadow: 40px 45px 400px 140px rgba(118, 33, 120, 0.78);
+    -moz-box-shadow: 40px 45px 400px 140px rgba(118, 33, 120, 0.78);
+    top: 45%;
+    left: 15%;
+    z-index: 9999;
+}
+
+
+/* Let's MAke an Responsive to all devices */
+
+/* Max width 1048px only */
+@media (max-width: 1048px) {
+    .nav_items .link{
+        font-size: 1.19rem;
+    }
+    .fullname{
+        font-size: 2.2rem;
+        letter-spacing: 0.099rem;
+    }
+    .about_me{
+        font-size: 0.999rem;
+        margin-bottom: 2.2rem;
+    }
+    .my_img{
+        width: 100%;
+        height: 64vh;
+    }
+}
+
+/* Max width 915px only */
+@media (max-width: 1048px) {
+    .nav_items_section .nav_items{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(1, 17, 23, 0.88);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s ease-out;
+        z-index: 9999;
+    }
+    .nav_items_section li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .toggleIcon{
+        display: block;
+    }
+    .nav_items .link{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .nav_items_section ul.showNavbar{
+        left: 0;
+    }
+
+    /*  */
+    .hero_section{
+        width: 100%;
+        height: 100vh;
+        padding-top: 5.5rem !important;
+    }
+    .fullname{
+        font-size: 2.0rem;
+        letter-spacing: 0.099rem;
+    }
+    .about_me{
+        font-size: 0.799rem;
+    }
+    .my_img{
+        width: 100%;
+        height: 64vh;
+    }
+}
+
+/* Max width 770 only */
+@media (max-width: 770px) {
+    .main_section{
+        width: 100%;
+        height: 130vh;
+    }
+    .hero_section{
+        flex-wrap: wrap;
+        padding-top: 4.5rem !important;
+        gap: 2rem;
+    }
+    .personal_data_section{
+        width: 100%;
+    }
+    .red_circle{
+        background: transparent;
+        box-shadow: 40px 45px 200px 90px rgba(118, 33, 120, 0.78);
+        -webkit-box-shadow: 40px 45px 200px 90px rgba(118, 33, 120, 0.78);
+        -moz-box-shadow: 40px 45px 200px 90px rgba(118, 33, 120, 0.78);
+        top: 20%;
+        left: 15%;
+    }
+    .img_section{
+        width: 100%;
+    }
+    .my_img{
+        width: 100%;
+        height: 64vh;
+    }
+}
+
+
+/* Max width 380 only */
+@media (max-width: 380px) {
+    .main_section{
+        width: 100%;
+        height: 135vh;
+    }
+    .my_img{
+        width: 100%;
+        height: 57vh;
+    }
+}
+
+/* End */
